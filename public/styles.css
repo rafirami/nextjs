@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show {
+  display: block;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+   overflow-x:hidden;
+}
+h2,h3,h4,h5 {
+  line-height:normal !important;
+}
+h1, h2, h3, h4,p, a{
+  overflow-y:hidden;
+}
+p{
+  color:  rgba(0, 0, 0, 0.65);
+}
+h1{
+  color:  rgba(0, 0, 0, 0.8);
+}
+
+
+#bgLogo{
+  background-image: url("../images/KARAKANA-bg-image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height:900px; */
+  background-color:transparent;
+}
+
+/* mobile device */
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannerImage{
+    height: 150px !important; 
+  }
+  .pointer{
+    width:20px !important;
+    height:20px !important;
+  }
+  .eventImage{
+    height:180px !important;
+    width:100% !important;
+    object-fit:cover
+  }
+}
+/* ipad tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .bannerImage{
+    height: 280px !important; 
+    width:100% !important;
+  }
+  .eventImage{
+    height:180px !important;
+    width:100% !important;
+  }
+}
+
+/* small screen, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bannerImage{
+    height: 300px !important; 
+  }
+ 
+  .eventImage{
+    height:200px !important;
+    width:100% !important;
+  }
+  .pointer{
+    width:20px !important;
+    height:20px !important;
+  }
+}
+/* desktops, larg screen */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .navMenus{
+    margin-left:6.5rem !important;
+  }
+  .bannerImage{
+    height: 400px !important; 
+  }
+  .eventImage{
+    height:240px !important;
+    width:100% !important;
+  }
+}
+/* extra larg screen, tv */
+@media (min-width: 1201px)  {
+  .navMenus{
+    margin-left:6.5rem !important;
+  }
+  .bannerImage{
+    height: 500px !important; 
+  }
+  .eventImage{
+    height:200px !important;
+    width:100% !important;
+  }
+}
+.pointer{
+  /* fill:#1E88E5; */
+}
